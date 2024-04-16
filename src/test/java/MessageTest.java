@@ -50,4 +50,13 @@ public class MessageTest
         String actual = testMessage.getMessage();
         assertEquals(expected, actual);
     }
+
+    @Test
+    public void changeMessageTest()
+    {
+        testMessage.changeMessage("ChangeTest");
+        String expected = "ChangeTest";
+        String actual = testMessage.getMessageContent();
+        assertEquals(expected, actual);
+    }
 }
